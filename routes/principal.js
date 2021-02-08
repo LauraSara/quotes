@@ -29,14 +29,10 @@ router.get('/quotes', function(req, res) {
 });
 
 router.post("/quotes", (req, res) => {
-  res.render('quotes', {quotes:quotes});
-});
-
-router.post("/quotes", (req, res) => {
   const newquote = req.body
-  console.log(newquote);
-  quotes.push(req.body.author);
-  quotes.push(req.body.text);
+  quotes.push(newquote)
+  console.log(quotes);
+  
   //quotes.push(newquote)
   res.render("quotes", {quotes:quotes})  
 });
