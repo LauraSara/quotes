@@ -3,23 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="static/bootstrap.min.css" rel="stylesheet">
-  <script src="static/bootstrap.bundle.min.js" ></script>  
-  <title>Document</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+  <link href="static/paper.min.css" rel="stylesheet">
+  <link href="static/animate.min.css" rel="stylesheet">  
+  <title>Quoting Dojo</title>
   <style>
+    body{
+      background-image: url(static/323.jpg);
+      background-size: cover;
+      text-align: center;
+      margin: auto;
+    }    
     form{
-      margin: 10px;
+      color: white;
+      margin: 12px;
       text-align: center;
     }
     div{
+      display: block;
+      margin: 10px;
+    }
+    input, button{
+      background-color: snow;
+      padding: 10px;
+      border-radius: 15px;
+      text-align: center;
+      margin: auto;
       display: block;
     }
   </style>
 </head>
 <body>
   <form class="formulario" action="/quotes" method="post">
-    <h1>Welcome to Quoting Dojo</h1>
+    <h2 class="animate__animated animate__swing">✧ ﾟWelcome to Quoting Dojo ﾟ✧</h2>
     <div>
       Your Name: <input type="text" name="author" value="">
     </div>

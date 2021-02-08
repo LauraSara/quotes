@@ -4,18 +4,53 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <link href="static/paper.min.css" rel="stylesheet">
+  <link href="static/animate.min.css" rel="stylesheet">
+  <script src="https://use.fontawesome.com/releases/v5.15.2/js/all.js" data-auto-replace-svg="nest"></script>
+  <title>Quoting Dojo</title>
   <style>
     p{
       text-align: center;
+      color: white;
+    }
+    body{
+      height: 500px;
+      background-image: url(static/animation.gif);
+      background: 0.3;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+    h3{
+      text-align: center;
+      margin-top: 90px;
+      margin-bottom: 65px;
+      color: white;
+    }
+    .comi{
+      font-size: 40px;
+      text-align: center;
+      color: white;
+      margin: auto;
+      display: block;
+    }
+    div{
+      background-color: slategray;
+      max-width: 550px;
+      text-align: center;
+      margin: auto;
+      display: block;
     }
   </style>
 </head>
 <body>
-  <h1>Here are the awesome quotes! </h1>
+  <h3 class="animate__animated animate__bounceInUp animate__slower">Here are the awesome quotes! </h3>
+<div>
+  <i class="comi fas fa-quote-left"></i>
   <% for (let quote of quotes) { %>
     <p><%= quote.author %> - <%= quote.text %></p>
   <% } %>
+  <i class=" comi fas fa-quote-right"></i>
 
+</div>
 </body>
 </html>

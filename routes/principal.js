@@ -3,7 +3,7 @@ const router = Router();
 const quotes = 
 [
   {
-      author: "Anonimus",
+      author: "Anonymus",
       text: "Hay que fallar antes de que funcione"
   },
   {
