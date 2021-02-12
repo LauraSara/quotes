@@ -36,4 +36,5 @@ router.post("/quotes", (req, res) => {
   //quotes.push(newquote)
   res.render("quotes", {quotes:quotes})  
 });
+
 module.exports = router;

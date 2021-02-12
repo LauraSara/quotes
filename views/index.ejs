@@ -37,13 +37,14 @@
   <form class="formulario" action="/quotes" method="post">
     <h2 class="animate__animated animate__swing">✧ ﾟWelcome to Quoting Dojo ﾟ✧</h2>
     <div>
-      Your Name: <input type="text" name="author" value="">
+      Your Name: <input type="text" name="author" value="" pattern="^[a-zA-Z]+$" required/>
     </div>
     <div>
-      Your Quote: <input type="text" name="text" value="">
+      Your Quote: <input type="text" name="text" value="" pattern="^[a-zA-Z]+$" required/>
     </div>
-    <input  type="submit" name="add" value="Add my Quote">
-    <a href="/quotes"><button>Skip my quotes</button></a>
+    
+    <a href="/newquote"><button>Add my Quote</button></a>
+    <a href="/"><button>Skip to Quotes</button></a>
   </form>
   
 </body>
